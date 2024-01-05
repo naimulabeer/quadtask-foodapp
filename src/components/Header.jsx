@@ -2,7 +2,7 @@ function Header() {
   return (
     <div className="navbar">
       <div className="navbar-start">
-        <a className="btn btn-ghost text-xl font-extrabold">pti.</a>
+        <a className="btn btn-ghost text-2xl font-extrabold">pti.</a>
       </div>
       <div className="navbar-center lg:flex gap-1">
         <div className="form-control relative">

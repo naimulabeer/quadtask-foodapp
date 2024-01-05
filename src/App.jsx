@@ -1,3 +1,4 @@
+import Banner from "./components/Banner";
 import Header from "./components/Header";
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
     <>
       <div className="lg:px-72 py-4">
         <Header />
+        <Banner />
       </div>
     </>
   );
