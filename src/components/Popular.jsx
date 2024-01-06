@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
+import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
 
 const Popular = () => {
   const [popularItems, setPopularItems] = useState([]);
@@ -33,7 +34,19 @@ const Popular = () => {
 
   return (
     <div className="mt-20 p-5">
-      <h1 className="text-lg font-bold mb-5">Popular</h1>
+      <div className="flex justify-between items-center">
+        <h1 className="text-lg font-bold mb-5">Popular</h1>
+        <div className="flex gap-2 items-center">
+          <button className="text-orange-500">AddMore</button>
+          <button>
+            <AiOutlineLeft />
+          </button>
+          <button>
+            <AiOutlineRight />
+          </button>
+        </div>
+      </div>
+
       <Swiper
         spaceBetween={10}
         slidesPerView={5}
