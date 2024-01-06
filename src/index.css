@@ -5,3 +5,25 @@
 :root {
   background-color: rgb(234, 234, 231);
 }
+
+.swiper-button-next {
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  width: 5px;
+  height: 2px;
+  z-index: 10;
+  cursor: pointer;
+  color: #d9d5d5;
+}
+
+.swiper-button-prev {
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  width: 5px;
+  height: 2px;
+  z-index: 10;
+  cursor: pointer;
+  color: #d9d5d5;
+}

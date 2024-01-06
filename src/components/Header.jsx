@@ -14,13 +14,13 @@ function Header() {
           <input
             type="text"
             placeholder="Search Audiobook"
-            className="input input-bordered w-60 md:w-96 lg:w-[500px] bg-white px-12"
+            className="input input-bordered w-48 md:w-96 lg:w-[500px] bg-white px-12"
           />
         </div>
 
-        <ul className="menu menu-horizontal px-1 border bg-white rounded-xl ">
+        <ul className="menu menu-horizontal px-1 border bg-white rounded-xl">
           <li>
-            <details className="md:w-44">
+            <details className="md:w-44 w-28 text-sm">
               <summary className="uppercase font-bold focus:text-amber-600">
                 Menu
               </summary>

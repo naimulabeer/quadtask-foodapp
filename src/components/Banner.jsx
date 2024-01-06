@@ -20,20 +20,21 @@ function Banner() {
           </div>
         </div>
       </div>
-      <div className="lg:hidden block mt-5">
+      <div className="lg:hidden block mt-20 px-1">
         <div className="flex flex-col gap-2 items-center px-5">
-          <h1 className="text-3xl font-bold mb-4 self-center">
+          <h1 className="text-3xl font-bold mb-4 self-center text-center">
             Deliver Food To Your Door Step|
           </h1>
           <h2 className="text-lg text-slate-600">
             Authentic Food|, Quick Service, Fast Delivery
           </h2>
         </div>
-        <div className="flex justify-center items-center">
+        <div className="relative flex justify-center">
+          <div className="bg-orange-500 w-full absolute inset-0 top-20 rounded-[28px]"></div>
           <img
             src="Image1.png"
             alt="Food Delivery"
-            className="w-fit object-cover "
+            className="w-fit h-[310px] md:h-fit object-cover relative z-10"
           />
         </div>
       </div>
