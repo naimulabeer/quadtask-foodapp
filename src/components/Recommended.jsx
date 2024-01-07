@@ -6,8 +6,8 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
 
-const Popular = () => {
-  const [popularItems, setPopularItems] = useState([]);
+const Recommended = () => {
+  const [recommendedItems, setRecommendedItems] = useState([]);
   const [hasPrevious, setHasPrevious] = useState(false);
   const swiperRef = useRef(null);
 
@@ -18,11 +18,11 @@ const Popular = () => {
           "http://www.api.technicaltest.quadtheoryltd.com/api/Item?page=1&pageSize=10"
         );
 
-        const popularItems = response.data.Items.filter(
-          (item) => item.IsPopular === true
+        const recommendedItems = response.data.Items.filter(
+          (item) => item.IsRecommended === true
         );
 
-        setPopularItems(popularItems);
+        setRecommendedItems(recommendedItems);
         setHasPrevious(false);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -50,7 +50,7 @@ const Popular = () => {
   return (
     <div className="mt-20 p-5">
       <div className="flex justify-between items-baseline">
-        <h1 className="text-lg font-bold mb-5">Popular</h1>
+        <h1 className="text-lg font-bold mb-5">Recommended</h1>
         <div className="flex gap-1 items-center mr-6">
           <button className="text-orange-500">AddMore</button>
           <button
@@ -86,7 +86,7 @@ const Popular = () => {
           },
         }}
       >
-        {popularItems.map((item) => (
+        {recommendedItems.map((item) => (
           <SwiperSlide key={item.Id}>
             <div className="">
               <img
@@ -103,4 +103,4 @@ const Popular = () => {
   );
 };
 
-export default Popular;
+export default Recommended;
