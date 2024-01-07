@@ -3,12 +3,12 @@ function Banner() {
     <>
       <div className="px-4 lg:block hidden">
         <div className="mt-20 bg-orange-400 rounded-3xl overflow-hidden px-8 flex items-center">
-          <div className="flex-1 text-white px-16">
+          <div className="flex-1 text-slate-100 px-12">
             <h1 className="text-4xl font-bold mb-4">
               Deliver Food To Your Door Step|
             </h1>
-            <h2 className="text-lg text-slate-200">
-              Authentic Food|, Quick Service, Fast Delivery
+            <h2 className="text-lg text-slate-300">
+              Authentic Food|,Quick Service,Fast Delivery
             </h2>
           </div>
           <div className="mr-16">
@@ -26,7 +26,7 @@ function Banner() {
             Deliver Food To Your Door Step|
           </h1>
           <h2 className="text-lg text-slate-600">
-            Authentic Food|, Quick Service, Fast Delivery
+            Authentic Food|,Quick Service,Fast Delivery
           </h2>
         </div>
         <div className="relative flex justify-center">
