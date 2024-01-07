@@ -35,10 +35,10 @@ function Footer() {
           <input
             type="text"
             placeholder="Enter Your Email"
-            className="rounded-2xl h-12 w-9/12 placeholder:p-6 shadow-md mb-4"
+            className="rounded-2xl h-14 w-9/12 placeholder:p-6 shadow-md mb-4"
           />
-          <button className="absolute right-52 top-1.5 bg-orange-600 text-white px-2 py-1.5 w-1/5 rounded-xl flex items-center gap-2 justify-center">
-            Subscribe
+          <button className="absolute right-52 top-2 bg-orange-600 text-white px-2 py-2 w-1/5 rounded-xl flex items-center gap-2 justify-center">
+            <h1 className="ml-6">Subscribe</h1>
             <FaArrowRightLong />
           </button>
         </div>

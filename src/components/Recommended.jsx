@@ -50,13 +50,16 @@ const Recommended = () => {
   return (
     <div className="mt-5 p-5">
       <div className="flex justify-between items-baseline">
-        <h1 className="text-lg font-bold mb-5">Recommended</h1>
-        <div className="flex gap-1 items-center mr-6">
-          <button className="text-orange-500">AddMore</button>
+        <h1 className="text-xl mb-5">Recommended</h1>
+        <div className="flex gap-1 items-center mr-4">
+          <button className="text-orange-500 font-medium text-sm hidden lg:block">
+            AddMore
+          </button>
           <button
             onClick={handlePrev}
             disabled={!hasPrevious}
             style={{ opacity: hasPrevious ? 1 : 0.3 }}
+            className="hidden lg:block"
           >
             <AiOutlineLeft />
           </button>
@@ -94,7 +97,7 @@ const Recommended = () => {
                 alt={item.Name}
                 className="w-[140px] h-[180px] md:w-[250px] md:h-[280px] object-cover mb-4 rounded-lg shadow-md"
               />
-              <h3 className="text-lg text-center mb-2">{item.Name}</h3>
+              <h3 className="text-center mb-2">{item.Name}</h3>
             </div>
           </SwiperSlide>
         ))}
