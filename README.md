@@ -12,6 +12,10 @@ QuadTheory Web App is a modern and responsive web application designed to showca
 
 ## Live Link
 
+[Live Link](https://quadtheory-foodapp.netlify.app/)
+
+## Drive Video Link
+
 ## Features
 
 ### 1. Image Slider with SwiperJS
