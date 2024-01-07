@@ -58,10 +58,10 @@ Follow these steps to set up the QuadTheory Web App on your local machine:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/quadtheory-web-app.git
+git clone https://github.com/naimulabeer/quadtask-foodapp.git
 
 # Navigate to the project directory
-cd quadtheory-web-app
+cd quadtheory-foodapp
 
 # Install dependencies
 npm install
