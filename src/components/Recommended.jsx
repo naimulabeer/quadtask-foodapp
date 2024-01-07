@@ -48,7 +48,7 @@ const Recommended = () => {
   };
 
   return (
-    <div className="mt-20 p-5">
+    <div className="mt-5 p-5">
       <div className="flex justify-between items-baseline">
         <h1 className="text-lg font-bold mb-5">Recommended</h1>
         <div className="flex gap-1 items-center mr-6">
