@@ -5,10 +5,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
+import AddMoreModal from "./AddMoreModal";
+import { ToastContainer } from "react-toastify";
 
 const Recommended = () => {
   const [recommendedItems, setRecommendedItems] = useState([]);
   const [hasPrevious, setHasPrevious] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const swiperRef = useRef(null);
 
   useEffect(() => {
@@ -47,13 +50,28 @@ const Recommended = () => {
     }
   };
 
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleAddItem = (data) => {
+    setRecommendedItems([...recommendedItems, data]);
+  };
+
   return (
     <div className="mt-5 p-5">
       <div className="flex justify-between items-baseline">
         <h1 className="text-xl mb-5">Recommended</h1>
         <div className="flex gap-1 items-center mr-4">
-          <button className="text-orange-500 font-medium text-sm hidden lg:block">
-            AddMore
+          <button
+            onClick={openModal}
+            className="text-orange-500 font-medium text-sm hidden lg:block"
+          >
+            Add More
           </button>
           <button
             onClick={handlePrev}
@@ -102,6 +120,12 @@ const Recommended = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      <AddMoreModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        onSubmit={handleAddItem}
+      />
+      <ToastContainer />
     </div>
   );
 };
